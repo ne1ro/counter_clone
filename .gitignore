@@ -55,6 +55,7 @@ Assets/AssetStoreTools*
 UnityGenerated/
 *.png
 *.jpg
+*.jpeg
 *.mp3
 *.wav
 
