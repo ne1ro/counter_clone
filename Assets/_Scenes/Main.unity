@@ -341,7 +341,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1022488946}
   - 114: {fileID: 1022488947}
-  - 54: {fileID: 1022488948}
+  - 143: {fileID: 1022488948}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -373,29 +373,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811451563b4d44173b70534eba706649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookTransform: {fileID: 593530898}
-  gravity: {x: 0, y: -9.81000042, z: 0}
-  rotationRate: .100000001
-  velocity: 8
-  groundControl: 1
-  airControl: .200000003
-  jumpVelocity: 5
-  groundHeight: 1.10000002
---- !u!54 &1022488948
-Rigidbody:
+  speed: 5
+  jumpSpeed: 5
+  gravity: 9.80665016
+--- !u!143 &1022488948
+CharacterController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1022488945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Height: 1.75
+  m_Radius: .5
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: .00100000005
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &1047348015
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,9 +653,9 @@ GameObject:
   - 4: {fileID: 1619071600}
   - 218: {fileID: 1619071602}
   - 154: {fileID: 1619071601}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -682,7 +679,7 @@ TerrainCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1619071599}
   m_Material: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 872bc8fabebe341db85f5bf920badbce, type: 2}
   m_EnableTreeColliders: 0
 --- !u!218 &1619071602
