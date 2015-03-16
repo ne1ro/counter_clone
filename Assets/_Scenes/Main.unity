@@ -383,11 +383,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 593530893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06273de2a907642bda08daa24497eb9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 458602a78860846678ca7a5a7c215b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 4
-  panSpeed: 4
+  axes: 0
+  sensitivityX: 5
+  sensitivityY: 5
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
 --- !u!1 &598677892
 GameObject:
   m_ObjectHideFlags: 0
