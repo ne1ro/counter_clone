@@ -59,6 +59,8 @@ UnityGenerated/
 *.jpeg
 *.mp3
 *.wav
+*.fbx
+*.fbm
 
 #####=== Vim ===#####
 [._]*.s[a-w][a-z]
