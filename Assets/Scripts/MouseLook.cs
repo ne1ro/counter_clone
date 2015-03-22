@@ -28,7 +28,7 @@ public class MouseLook : MonoBehaviour {
 
       transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
     }
-    // Move camera on X mouse move
+    // Move player on X mouse move
     else if (axes == RotationAxes.MouseX) {
       transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
     }

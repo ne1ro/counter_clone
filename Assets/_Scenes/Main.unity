@@ -233,7 +233,6 @@ GameObject:
   - 124: {fileID: 593530895}
   - 81: {fileID: 593530894}
   - 82: {fileID: 593530899}
-  - 114: {fileID: 593530900}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -375,24 +374,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &593530900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 593530893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 458602a78860846678ca7a5a7c215b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axes: 0
-  sensitivityX: 2.5
-  sensitivityY: 2.5
-  minimumX: -360
-  maximumX: 360
-  minimumY: -60
-  maximumY: 60
 --- !u!1 &598677892
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +412,7 @@ GameObject:
   - 4: {fileID: 1022488946}
   - 114: {fileID: 1022488947}
   - 143: {fileID: 1022488948}
+  - 114: {fileID: 1022488949}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -483,6 +465,24 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: .00100000005
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1022488949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022488945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458602a78860846678ca7a5a7c215b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 0
+  sensitivityX: 2.5
+  sensitivityY: 2.5
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
 --- !u!1 &1047348015
 GameObject:
   m_ObjectHideFlags: 0
