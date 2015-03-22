@@ -824,7 +824,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.19826889
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -898,15 +898,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: .600000024
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.14999998
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalRotation.x
@@ -914,7 +914,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: .707106471
+      value: .73727715
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalRotation.z
@@ -922,7 +922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -.707107186
+      value: -.675590396
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_RootOrder
@@ -934,15 +934,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalScale.x
-      value: .5
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalScale.y
-      value: .5
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
       propertyPath: m_LocalScale.z
-      value: .5
+      value: .25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36a618bed3665f348a5f68874f03f9fe, type: 3}
