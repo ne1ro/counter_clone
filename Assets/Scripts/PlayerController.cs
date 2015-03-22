@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-  public float speed = 6.0F;
-  public float jumpSpeed = 8.0F;
+  public float speed = 8.0F;
+  public float jumpSpeed = 7.0F;
   public float gravity = 9.81F;
 
   private Vector3 moveDirection = Vector3.zero;
