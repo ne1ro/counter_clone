@@ -3,7 +3,10 @@ using System.Collections;
 
 public class Shot : MonoBehaviour {
   public AudioClip shotSound;
-  public float fireRate = 0.1f;
+  public float fireRate = 1.5f; // Battle fire rate is 40 per minute for single shots
+  public int cartridgeCount = 30;
+  public float chargeInterval = 3.5f;
+  public int distance = 1500; // Penetration distance, use 3000 for non-lethal
 
   private float nextFire = 0.0f;
 
