@@ -87,33 +87,6 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &170832520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 170832521}
-  m_Layer: 0
-  m_Name: GUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &170832521
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170832520}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.9201508, y: -49.8436317, z: 54.4858246}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
 --- !u!1 &268206281
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +402,7 @@ Transform:
   m_Children:
   - {fileID: 435658901}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1001 &774396430
 Prefab:
   m_ObjectHideFlags: 0
@@ -516,7 +489,7 @@ Transform:
   - {fileID: 593530898}
   - {fileID: 1264917375}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &1022488947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,4 +1017,4 @@ Transform:
   - {fileID: 1151133515}
   - {fileID: 1619071600}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2

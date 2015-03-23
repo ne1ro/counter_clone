@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class GameController : MonoBehaviour {
-  void Awake() {
-    // Lock and hide cursor
-    Cursor.visible = false;
+  void Start() {
+    Cursor.visible = true;
     Cursor.lockState = CursorLockMode.Locked;
   }
 }
