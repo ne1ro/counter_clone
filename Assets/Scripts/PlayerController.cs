@@ -28,14 +28,17 @@ public class PlayerController : MonoBehaviour {
       }
 
       // Running sound
-      if (Input.GetButton("Horizontal") || Input.GetButton("Vertical")) {
+      if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")) {
         if (!audio.isPlaying) {
-          Debug.Log("not playing");
+          audio.clip = runningSound;
           audio.Play();
         } else {
-          Debug.Log("is playing");
           if (audio.isPlaying) audio.Stop();
         }
+      }
+
+      if (Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical")) {
+        if (audio.clip == runningSound && audio.isPlaying) audio.Stop();
       }
     }
 
