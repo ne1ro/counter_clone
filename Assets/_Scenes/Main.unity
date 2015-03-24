@@ -482,6 +482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotSound: {fileID: 8300000, guid: 67ba6280a31f345959777bb790a0ee6e, type: 3}
   fireRate: .100000001
+  cartridgeCount: 30
+  chargeInterval: 3.5
   distance: 1500
 --- !u!82 &869329945
 AudioSource:
