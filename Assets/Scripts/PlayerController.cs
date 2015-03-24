@@ -6,11 +6,13 @@ public class PlayerController : MonoBehaviour {
   public float jumpSpeed = 3.75f;
   public float gravity = 9.81f;
   public AudioClip jumpSound;
+  public AudioClip runningSound;
 
   private Vector3 moveDirection = Vector3.zero;
 
   void Update() {
     CharacterController controller = GetComponent<CharacterController>();
+    AudioSource audio = GetComponent<AudioSource>();
 
     // Move player character
     if (controller.isGrounded) {
@@ -21,7 +23,19 @@ public class PlayerController : MonoBehaviour {
       // Jump and play jump sound
       if (Input.GetButton("Jump")) {
         moveDirection.y = jumpSpeed;
-        GetComponent<AudioSource>().PlayOneShot(jumpSound);
+        if (audio.isPlaying) audio.Stop();
+        audio.PlayOneShot(jumpSound);
+      }
+
+      // Running sound
+      if (Input.GetButton("Horizontal") || Input.GetButton("Vertical")) {
+        if (!audio.isPlaying) {
+          Debug.Log("not playing");
+          audio.Play();
+        } else {
+          Debug.Log("is playing");
+          if (audio.isPlaying) audio.Stop();
+        }
       }
     }
 

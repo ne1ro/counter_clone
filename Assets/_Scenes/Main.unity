@@ -602,6 +602,7 @@ MonoBehaviour:
   jumpSpeed: 3.75
   gravity: 9.80665016
   jumpSound: {fileID: 8300000, guid: f1d9a1c3f1c2842b48bcfe5bf6e7dc9b, type: 3}
+  runningSound: {fileID: 8300000, guid: f5d24bc7c97a643dc812792103bbd9a5, type: 3}
 --- !u!143 &1022488948
 CharacterController:
   m_ObjectHideFlags: 0
@@ -657,7 +658,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f5d24bc7c97a643dc812792103bbd9a5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
