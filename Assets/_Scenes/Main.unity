@@ -598,9 +598,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811451563b4d44173b70534eba706649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  jumpSpeed: 5
+  speed: 7
+  jumpSpeed: 3.75
   gravity: 9.80665016
+  jumpSound: {fileID: 8300000, guid: f1d9a1c3f1c2842b48bcfe5bf6e7dc9b, type: 3}
 --- !u!143 &1022488948
 CharacterController:
   m_ObjectHideFlags: 0
@@ -657,7 +658,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

@@ -2,9 +2,10 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-  public float speed = 8.0F;
-  public float jumpSpeed = 7.0F;
-  public float gravity = 9.81F;
+  public float speed = 7.0f;
+  public float jumpSpeed = 3.75f;
+  public float gravity = 9.81f;
+  public AudioClip jumpSound;
 
   private Vector3 moveDirection = Vector3.zero;
 
@@ -17,7 +18,11 @@ public class PlayerController : MonoBehaviour {
       moveDirection = transform.TransformDirection(moveDirection);
       moveDirection *= speed;
 
-      if (Input.GetButton("Jump")) moveDirection.y = jumpSpeed;
+      // Jump and play jump sound
+      if (Input.GetButton("Jump")) {
+        moveDirection.y = jumpSpeed;
+        GetComponent<AudioSource>().PlayOneShot(jumpSound);
+      }
     }
 
     moveDirection.y -= gravity * Time.deltaTime;
