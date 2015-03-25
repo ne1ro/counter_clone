@@ -480,11 +480,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb31db051a12d4338bff16228d454d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotSound: {fileID: 8300000, guid: 67ba6280a31f345959777bb790a0ee6e, type: 3}
-  fireRate: .100000001
+  fireRate: .25
   cartridgeCount: 30
   chargeInterval: 3.5
   distance: 1500
+  shotSound: {fileID: 8300000, guid: 67ba6280a31f345959777bb790a0ee6e, type: 3}
+  chargeSound: {fileID: 0}
 --- !u!82 &869329945
 AudioSource:
   m_ObjectHideFlags: 0
