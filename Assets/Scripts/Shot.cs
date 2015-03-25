@@ -17,7 +17,7 @@ public class Shot : MonoBehaviour {
 
   void Start() {
     nextFire = 0.0f;
-    roundCount = 5;
+    roundCount = cartridgeCount;
     roundCountText.text = roundCount.ToString();
   }
 
