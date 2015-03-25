@@ -12,7 +12,6 @@ public class Shot : MonoBehaviour {
   public AudioClip chargeSound;
   public Text roundCountText;
 
-
   private float nextFire;
   private int roundCount;
 
@@ -23,18 +22,21 @@ public class Shot : MonoBehaviour {
   }
 
   void Update() {
-    bool isCharged = roundCount > 0;
     // Shot
-    if (Input.GetButton("Fire1") && Time.time > nextFire && isCharged) {
+    if (Input.GetButton("Fire1") && Time.time > nextFire && roundCount > 0) {
       nextFire = Time.time + fireRate;
       roundCount --;
       roundCountText.text = roundCount.ToString();
       GetComponent<AudioSource>().PlayOneShot(shotSound);
-    }
 
-    // Recharge
-    if (roundCount <= 0) {
-      roundCount = cartridgeCount;
+      if (roundCount <= 0) StartCoroutine(Recharge());
     }
+  }
+
+  // Recharge weapon
+  private IEnumerator Recharge() {
+    GetComponent<AudioSource>().PlayOneShot(chargeSound);
+    yield return new WaitForSeconds(chargeInterval);
+    roundCount = cartridgeCount;
   }
 }
