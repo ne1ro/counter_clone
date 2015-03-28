@@ -6,7 +6,9 @@ public class Shot : MonoBehaviour {
   public float fireRate = 1.5f; // Battle fire rate is 40 per minute for single shots
   public int cartridgeCount = 30;
   public float chargeInterval = 3.5f;
-  public int bulletSpeed = 715; // Bullet speed
+
+  public GameObject bullet;
+  public Transform bulletSpawn;
 
   public AudioClip shotSound;
   public AudioClip chargeSound;
@@ -29,6 +31,7 @@ public class Shot : MonoBehaviour {
       roundCountText.text = roundCount.ToString();
       GetComponent<AudioSource>().PlayOneShot(shotSound);
 
+      Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
       if (roundCount <= 0) StartCoroutine(Recharge());
     }
   }
