@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bullet : MonoBehaviour {
+public class DestroyByCollision : MonoBehaviour {
   public int bulletSpeed = 715;
 
 	void Start() {
@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour {
 	}
 
   void OnTriggerEnter(Collider other) {
+    Debug.Log(other);
     Destroy(gameObject);
   }
 }
