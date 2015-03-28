@@ -6,7 +6,6 @@ public class Shot : MonoBehaviour {
   public float fireRate = 1.5f; // Battle fire rate is 40 per minute for single shots
   public int cartridgeCount = 30;
   public float chargeInterval = 3.5f;
-  public int distance = 1500; // Lethal distance
   public int bulletSpeed = 715; // Bullet speed
 
   public AudioClip shotSound;
@@ -14,14 +13,12 @@ public class Shot : MonoBehaviour {
   public Text roundCountText;
 
   private float nextFire;
-  private float acceleration;
   private int roundCount;
 
   void Start() {
     nextFire = 0.0f;
     roundCount = cartridgeCount;
     roundCountText.text = roundCount.ToString();
-    acceleration = bulletSpeed * bulletSpeed / 2 * distance;
   }
 
   void Update() {
