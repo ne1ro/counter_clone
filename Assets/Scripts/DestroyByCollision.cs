@@ -9,7 +9,10 @@ public class DestroyByCollision : MonoBehaviour {
 	}
 
   void OnTriggerEnter(Collider other) {
-    Debug.Log(other);
+    if (other.tag == "Mob") {
+      Destroy(other.gameObject);
+    }
+
     Destroy(gameObject);
   }
 }
