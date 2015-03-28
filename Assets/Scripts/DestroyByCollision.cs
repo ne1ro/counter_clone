@@ -12,7 +12,8 @@ public class DestroyByCollision : MonoBehaviour {
     if (other.tag == "Mob") {
       Destroy(other.gameObject);
     }
-
-    Destroy(gameObject);
+    if (other.tag != "Boundary") {
+      Destroy(gameObject);
+    }
   }
 }
