@@ -118,7 +118,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -25}
+  m_AnchoredPosition: {x: 76, y: -25}
   m_SizeDelta: {x: 100, y: 48}
   m_Pivot: {x: 0, y: .5}
 --- !u!114 &2662076
@@ -1043,6 +1043,74 @@ Transform:
   - {fileID: 435658901}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &641221436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 641221440}
+  - 222: {fileID: 641221439}
+  - 114: {fileID: 641221438}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &641221438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641221436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .705882311, g: .160899624, b: .160899624, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 32
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '0
+
+'
+--- !u!222 &641221439
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641221436}
+--- !u!224 &641221440
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641221436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1413582558}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -75, y: -25}
+  m_SizeDelta: {x: 100, y: 48}
+  m_Pivot: {x: 0, y: .5}
 --- !u!1001 &774396430
 Prefab:
   m_ObjectHideFlags: 0
@@ -1123,7 +1191,7 @@ MonoBehaviour:
   fireRate: .25
   cartridgeCount: 30
   chargeInterval: 3.5
-  bullet: {fileID: 112090, guid: 3d0535c3e2c2144c48071779c680cb44, type: 2}
+  bullet: {fileID: 199776, guid: 8029c723c65be46dc9d0543e67853253, type: 2}
   bulletSpawn: {fileID: 1523286635}
   shotSound: {fileID: 8300000, guid: 67ba6280a31f345959777bb790a0ee6e, type: 3}
   chargeSound: {fileID: 8300000, guid: f836222f209a34aea88e9212441bd1a3, type: 3}
@@ -1213,7 +1281,7 @@ GameObject:
   - 136: {fileID: 1022488952}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,6 +1361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6b71f60b2a94c759437c737b96cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 641221438}
 --- !u!82 &1022488951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1439,7 +1508,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: -25}
+  m_AnchoredPosition: {x: 150, y: -25}
   m_SizeDelta: {x: 100, y: 48}
   m_Pivot: {x: 0, y: .5}
 --- !u!114 &1142498491
@@ -1550,6 +1619,7 @@ RectTransform:
   m_Children:
   - {fileID: 1142498490}
   - {fileID: 2662075}
+  - {fileID: 641221440}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
