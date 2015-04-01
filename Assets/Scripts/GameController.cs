@@ -7,8 +7,8 @@ public class GameController : MonoBehaviour {
   private int score = 0;
 
   void Awake() {
-    Cursor.visible = true;
     Cursor.lockState = CursorLockMode.Locked;
+    Cursor.visible = false;
     scoreText.text = score.ToString();
   }
 
