@@ -930,6 +930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: .25
   cartridgeCount: 30
+  distance: 400
   chargeInterval: 3.5
   bullet: {fileID: 199776, guid: 8029c723c65be46dc9d0543e67853253, type: 2}
   bulletSpawn: {fileID: 1523286635}
