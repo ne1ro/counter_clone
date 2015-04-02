@@ -1,0 +1,13 @@
+.sync
+Icon
+Icon*
+.DS_Store
+*.exe
+*.app
+*.swp
+.Sync
+*.lnk
+Thumbs.db
+.git
+.idea
+.consulo
