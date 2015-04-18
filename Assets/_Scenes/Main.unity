@@ -748,15 +748,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .464816868
+      value: .280000001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -.650481224
+      value: -.289999992
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: .730000019
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
       propertyPath: m_LocalRotation.x
@@ -822,6 +822,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: .350108713
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -.121831484
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -.726422966
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: .578697503
+      objectReference: {fileID: 0}
+    - target: {fileID: 11100000, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41cf3bbbc2bb6ac478db925e9b63b198, type: 3}
   m_IsPrefabParent: 0
@@ -1420,7 +1440,7 @@ Transform:
   m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children: []
   m_Father: {fileID: 1899327529}
-  m_RootOrder: 11
+  m_RootOrder: 3
 --- !u!33 &1523286638
 MeshFilter:
   m_ObjectHideFlags: 0

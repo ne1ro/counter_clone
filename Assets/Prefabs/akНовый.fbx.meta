@@ -77,6 +77,12 @@ ModelImporter:
     100138: thumb.03.R_end
     100140: upper_arm.L
     100142: upper_arm.R
+    100144: Bone
+    100146: Bone.001
+    100148: Bone.001_end
+    100150: Bone.002
+    100152: Bone.002_end
+    100154: Bone_end
     400000: //RootNode
     400002: "\u0417\u0430\u0442\u0432\u043E\u0440"
     400004: "\u0417\u0430\u0442\u0432\u043E\u0440_\u0420\u0443\u0447\u043A\u0430"
@@ -149,6 +155,12 @@ ModelImporter:
     400138: thumb.03.R_end
     400140: upper_arm.L
     400142: upper_arm.R
+    400144: Bone
+    400146: Bone.001
+    400148: Bone.001_end
+    400150: Bone.002
+    400152: Bone.002_end
+    400154: Bone_end
     2300000: "\u0417\u0430\u0442\u0432\u043E\u0440"
     2300002: "\u0417\u0430\u0442\u0432\u043E\u0440_\u0420\u0443\u0447\u043A\u0430"
     2300004: "\u041A\u043E\u0440\u043F\u0443\u0441"
@@ -194,6 +206,52 @@ ModelImporter:
     4300024: Cloth_L
     4300026: Hand_R
     4300028: Cloth_R
+    7400000: Arm_L|Arm_LAction
+    7400002: Arm_L|Cloth_LAction
+    7400004: Arm_L|Hand_LAction
+    7400006: "Arm_L|\u0410\u0432\u0442\u043E\u043C\u0430\u0442Action"
+    7400008: "Arm_L|\u0417\u0430\u0442\u0432\u043E\u0440_\u0420\u0443\u0447\u043A\u0430Action"
+    7400010: "Arm_L|\u0417\u0430\u0442\u0432\u043E\u0440Action"
+    7400012: "Arm_L|\u041A\u043E\u0440\u043F\u0443\u0441Action"
+    7400014: "Arm_L|\u041A\u0443\u0440\u043E\u043AAction"
+    7400016: "Arm_L|\u041C\u0430\u0433\u0430\u0437\u0438\u043DAction"
+    7400018: "Arm_L|\u041F\u0438\u043F\u043A\u0430Action"
+    7400020: "Arm_L|\u041F\u0440\u0438\u043A\u043B\u0430\u0434_\u043C\u0435\u0442\u0430\u043B\u043BAction"
+    7400022: "Arm_L|\u041F\u0440\u0438\u043A\u043B\u0430\u0434Action"
+    7400024: "Arm_L|\u0420\u0443\u043A\u043E\u044F\u0442\u044CAction"
+    7400026: "Arm_L|\u0421\u0442\u0432\u043E\u043B_\u043F\u0440\u0435\u0434\u043E\u0445_\u043B\u044CAction"
+    7400028: "Arm_L|\u0426\u0435\u0432\u044C\u0435Action"
+    7400030: Hand_L|Cloth_LAction
+    7400032: Hand_L|Hand_LAction
+    7400034: "Hand_L|\u0410\u0432\u0442\u043E\u043C\u0430\u0442Action"
+    7400036: "Hand_L|\u0417\u0430\u0442\u0432\u043E\u0440_\u0420\u0443\u0447\u043A\u0430Action"
+    7400038: "Hand_L|\u0417\u0430\u0442\u0432\u043E\u0440Action"
+    7400040: "Hand_L|\u041A\u043E\u0440\u043F\u0443\u0441Action"
+    7400042: "Hand_L|\u041A\u0443\u0440\u043E\u043AAction"
+    7400044: "Hand_L|\u041C\u0430\u0433\u0430\u0437\u0438\u043DAction"
+    7400046: "Hand_L|\u041F\u0438\u043F\u043A\u0430Action"
+    7400048: "Hand_L|\u041F\u0440\u0438\u043A\u043B\u0430\u0434_\u043C\u0435\u0442\u0430\u043B\u043BAction"
+    7400050: "Hand_L|\u041F\u0440\u0438\u043A\u043B\u0430\u0434Action"
+    7400052: "Hand_L|\u0420\u0443\u043A\u043E\u044F\u0442\u044CAction"
+    7400054: "Hand_L|\u0421\u0442\u0432\u043E\u043B_\u043F\u0440\u0435\u0434\u043E\u0445_\u043B\u044CAction"
+    7400056: "Hand_L|\u0426\u0435\u0432\u044C\u0435Action"
+    7400058: Cloth_L|Cloth_LAction
+    7400060: Cloth_L|Hand_LAction
+    7400062: "Cloth_L|\u0410\u0432\u0442\u043E\u043C\u0430\u0442Action"
+    7400064: "Cloth_L|\u0417\u0430\u0442\u0432\u043E\u0440_\u0420\u0443\u0447\u043A\u0430Action"
+    7400066: "Cloth_L|\u0417\u0430\u0442\u0432\u043E\u0440Action"
+    7400068: "Cloth_L|\u041A\u043E\u0440\u043F\u0443\u0441Action"
+    7400070: "Cloth_L|\u041A\u0443\u0440\u043E\u043AAction"
+    7400072: "Cloth_L|\u041C\u0430\u0433\u0430\u0437\u0438\u043DAction"
+    7400074: "Cloth_L|\u041F\u0438\u043F\u043A\u0430Action"
+    7400076: "Cloth_L|\u041F\u0440\u0438\u043A\u043B\u0430\u0434_\u043C\u0435\u0442\u0430\u043B\u043BAction"
+    7400078: "Cloth_L|\u041F\u0440\u0438\u043A\u043B\u0430\u0434Action"
+    7400080: "Cloth_L|\u0420\u0443\u043A\u043E\u044F\u0442\u044CAction"
+    7400082: "Cloth_L|\u0421\u0442\u0432\u043E\u043B_\u043F\u0440\u0435\u0434\u043E\u0445_\u043B\u044CAction"
+    7400084: "Cloth_L|\u0426\u0435\u0432\u044C\u0435Action"
+    11100000: //RootNode
+    13700000: Cloth_L
+    13700002: Hand_L
   materials:
     importMaterials: 1
     materialName: 0
@@ -247,7 +305,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
