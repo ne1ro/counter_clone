@@ -55,8 +55,10 @@ public class Shot : MonoBehaviour {
 
   // Recharge weapon
   private IEnumerator Recharge() {
+    Cursor.visible = false;
     GetComponent<AudioSource>().PlayOneShot(chargeSound);
     yield return new WaitForSeconds(chargeInterval);
     roundCount = cartridgeCount;
+    Cursor.visible = true;
   }
 }
