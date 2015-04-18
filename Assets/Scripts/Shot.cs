@@ -56,13 +56,18 @@ public class Shot : MonoBehaviour {
   // Recharge weapon
   private IEnumerator Recharge() {
     Animation animation = GetComponent<Animation>();
+    foreach (AnimationState state in animation) {
+        state.speed = 2.0F;
+    }
 
+    // Before recharge
     Cursor.visible = false;
     animation.Play();
     GetComponent<AudioSource>().PlayOneShot(chargeSound);
 
     yield return new WaitForSeconds(chargeInterval);
 
+    // After recharge
     animation.Stop();
     roundCount = cartridgeCount;
     Cursor.visible = true;
